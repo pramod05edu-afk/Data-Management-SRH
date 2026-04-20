@@ -1,0 +1,125 @@
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+
+  "name": "Environmental Sensor Telemetry Data (IoT) - 132K Records",
+
+  "description": "A dataset containing approximately 132,000 rows of telemetry data collected from three IoT environmental sensor devices in a smart home setting. Recorded features include temperature, humidity, light intensity, motion detection, and carbon monoxide (CO) levels, along with Unix timestamps and device identifiers. Suitable for time-series analysis, anomaly detection, and machine learning classification tasks such as motion prediction.",
+
+  "url": "https://www.kaggle.com/datasets/garystafford/environmental-sensor-data-132k",
+
+  "identifier": "https://www.kaggle.com/datasets/garystafford/environmental-sensor-data-132k",
+
+  "creator": {
+    "@type": "Person",
+    "name": "Gary Stafford",
+    "url": "https://www.kaggle.com/garystafford"
+  },
+
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kaggle",
+    "url": "https://www.kaggle.com"
+  },
+
+  "datePublished": "2020-01-01",
+
+  "dateModified": "2020-01-01",
+
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+
+  "keywords": [
+    "IoT",
+    "Environmental Sensors",
+    "Telemetry",
+    "Temperature",
+    "Humidity",
+    "Motion Detection",
+    "Carbon Monoxide",
+    "Smart Home",
+    "Raspberry Pi",
+    "Time Series",
+    "Machine Learning",
+    "Anomaly Detection"
+  ],
+
+  "language": "en",
+
+  "inLanguage": "en",
+
+  "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "text/csv",
+    "contentUrl": "https://www.kaggle.com/datasets/garystafford/environmental-sensor-data-132k/download"
+  },
+
+  "measurementTechnique": "IoT environmental sensors (Raspberry Pi nodes) recording temperature, humidity, light, motion, and CO levels at regular intervals indoors.",
+
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "ts",
+      "description": "Unix epoch timestamp of the sensor reading"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "device",
+      "description": "MAC address identifier of the IoT sensor device"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "temp",
+      "description": "Temperature reading in degrees Celsius",
+      "unitText": "Celsius"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "humidity",
+      "description": "Relative humidity as a percentage",
+      "unitText": "Percentage"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "light",
+      "description": "Boolean indicating whether light is detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "motion",
+      "description": "Boolean indicating whether motion is detected"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "co",
+      "description": "Carbon monoxide concentration level"
+    }
+  ],
+
+  "size": "132,000 records across 7 variables from 3 IoT devices",
+
+  "isAccessibleForFree": true,
+
+  "conditionsOfAccess": "Freely available on Kaggle. Requires a Kaggle account to download.",
+
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Indoor Smart Home Environment"
+  },
+
+  "temporalCoverage": "2020",
+
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Internet of Things (IoT)"
+    },
+    {
+      "@type": "Thing",
+      "name": "Environmental Monitoring"
+    },
+    {
+      "@type": "Thing",
+      "name": "Smart Home Technology"
+    }
+  ]
+}

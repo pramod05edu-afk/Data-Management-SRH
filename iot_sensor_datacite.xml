@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns="http://datacite.org/schema/kernel-4"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://datacite.org/schema/kernel-4
+          https://schema.datacite.org/meta/kernel-4/metadata.xsd">
+
+  <!-- Unique Identifier for the dataset -->
+  <identifier identifierType="URL">
+    https://www.kaggle.com/datasets/garystafford/environmental-sensor-data-132k
+  </identifier>
+
+  <!-- Creator / Author of the dataset -->
+  <creators>
+    <creator>
+      <creatorName nameType="Personal">Stafford, Gary</creatorName>
+      <affiliation>Kaggle</affiliation>
+    </creator>
+  </creators>
+
+  <!-- Title of the dataset -->
+  <titles>
+    <title xml:lang="en">
+      Environmental Sensor Telemetry Data (IoT) - 132K Records
+    </title>
+  </titles>
+
+  <!-- Publisher -->
+  <publisher>Kaggle</publisher>
+
+  <!-- Year of Publication -->
+  <publicationYear>2020</publicationYear>
+
+  <!-- Resource Type -->
+  <resourceType resourceTypeGeneral="Dataset">IoT Sensor Telemetry Dataset</resourceType>
+
+  <!-- Subject / Keywords -->
+  <subjects>
+    <subject xml:lang="en" subjectScheme="keyword">IoT</subject>
+    <subject xml:lang="en" subjectScheme="keyword">Environmental Sensors</subject>
+    <subject xml:lang="en" subjectScheme="keyword">Telemetry</subject>
+    <subject xml:lang="en" subjectScheme="keyword">Temperature</subject>
+    <subject xml:lang="en" subjectScheme="keyword">Humidity</subject>
+    <subject xml:lang="en" subjectScheme="keyword">Motion Detection</subject>
+    <subject xml:lang="en" subjectScheme="keyword">Carbon Monoxide</subject>
+    <subject xml:lang="en" subjectScheme="keyword">Smart Home</subject>
+    <subject xml:lang="en" subjectScheme="keyword">Machine Learning</subject>
+  </subjects>
+
+  <!-- Language -->
+  <language>en</language>
+
+  <!-- License / Rights -->
+  <rightsList>
+    <rights rightsURI="https://creativecommons.org/licenses/by/4.0/">
+      Creative Commons Attribution 4.0 International (CC BY 4.0)
+    </rights>
+  </rightsList>
+
+  <!-- Description / Abstract -->
+  <descriptions>
+    <description xml:lang="en" descriptionType="Abstract">
+      This dataset contains approximately 132,000 rows of telemetry data collected
+      from three IoT environmental sensor devices. Each device records the following
+      measurements: timestamp (Unix epoch), temperature (in degrees Celsius),
+      humidity (as a percentage), light intensity (boolean), motion detection
+      (boolean), and carbon monoxide (CO) levels. The data was collected in an
+      indoor smart home environment and can be used for time-series analysis,
+      anomaly detection, and machine learning classification tasks such as
+      motion prediction using logistic regression.
+    </description>
+    <description xml:lang="en" descriptionType="Methods">
+      Data was collected using three Raspberry Pi-based IoT sensor nodes
+      identified by their MAC addresses. Sensors recorded environmental
+      readings at regular intervals. Timestamps are stored as Unix epoch
+      seconds and converted to human-readable datetime format for analysis.
+      Outliers in temperature and humidity were removed using 1st and 99th
+      percentile thresholds per device.
+    </description>
+  </descriptions>
+
+  <!-- Related Identifiers -->
+  <relatedIdentifiers>
+    <relatedIdentifier relatedIdentifierType="URL" relationType="IsSourceOf">
+      https://www.kaggle.com/datasets/garystafford/environmental-sensor-data-132k
+    </relatedIdentifier>
+  </relatedIdentifiers>
+
+  <!-- Format -->
+  <formats>
+    <format>text/csv</format>
+    <format>application/x-ipynb+json</format>
+  </formats>
+
+  <!-- Version -->
+  <version>1.0</version>
+
+  <!-- Size -->
+  <sizes>
+    <size>132,000 rows</size>
+    <size>7 columns</size>
+  </sizes>
+
+</resource>
